@@ -1,0 +1,27 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #444;
+}
+
+.racket {
+    --position: 50;
+
+    position: absolute;
+    background-color: white;
+    top: calc(var(--position)*1vh);
+    transform: translateY(-50%);
+    width: 1vh;
+    height: 15vh;
+}
+
+.racket.right {
+    right: 1vw;
+}
+
+.racket.left {
+    left: 1vw;
+}
