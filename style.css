@@ -3,7 +3,7 @@
 }
 
 :root {
-    --hue: 200;
+    --hue: 520;
     --saturation: 50%;
     --foreground-color: hsl(var(--hue), var(--saturation), 75%);
     --background-color: hsl(var(--hue), var(--saturation), 25%);
@@ -66,4 +66,18 @@ body {
 .score > :first-child {
     text-align: right;
     border-right: 0.5vh solid var(--foreground-color);
+}
+
+.reset.button {
+    position: absolute;
+    justify-content: center;
+    left: 50vw;
+    transform: translateX(-50%);
+    top: 90vh;
+    font-weight: bold;
+    font-size: 4vh;
+    color: var(--foreground-color);
+    border-radius: 1;
+    border-color: var(--foreground-color);
+    background-color: var(--background-color);
 }
